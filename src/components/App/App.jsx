@@ -4,11 +4,13 @@ import { Chat, Signup, Login } from 'components';
 export const App = () => {
   
   return(
-      <Switch>
+      <div className="app">
+        <Switch >
         <Chat exact path="/" component={Chat} />
         <Route path="/Login" component={Login} />
         <Route path="/Signup" component={Signup} />
-      </Switch>
+        </Switch>
+      </div>
   );
 };
 
